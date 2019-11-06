@@ -1,6 +1,9 @@
 <div class="container content">
-  <div class="row">
-    <h1>{{ title }}</h1>
-  </div>
-  <app-lista-destinos></app-lista-destinos>
+  <h1>Ruteo Simple</h1>
+  <nav class="nav">
+    <a class="nav-link" [routerLink]="['/home']">Home</a>
+    <a class="nav-link" [routerLink]="['/destino']">Destino</a>
+  </nav>
+  <hr>
+  <router-outlet></router-outlet>
 </div>
